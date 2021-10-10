@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>SKKU Hackathon</title>
+
+    <link rel="shortcut icon" href={{ url_for('static', filename="images/fav.jpg")}}>
+    <link rel="stylesheet" href={{ url_for('static', filename="css/bootstrap.min.css")}}>
+    <link rel="stylesheet" href={{ url_for('static', filename="css/fontawsom-all.min.css")}}>
+    <link rel="stylesheet" type="text/css" href={{ url_for('static', filename="css/style.css")}} />
+
+</head>
+
+<body background={{ url_for('static', filename="images/bg5.png")}}>
+    <div class="container-fluid">
+        <div class="container">
+            <div class="col-sm-12 cv-cont">
+                <div class="header row">
+                    <h2 id="Heading">Focus Maker</h2>
+                    <p>by Aloha</p>
+                </div>
+
+                <nav class="navbar navbar-inverse">
+                  <div class="container-fluid">
+                    <div class="navbar-header">
+                      <a class="navbar-brand" href="" style="color: white">Concentration</a>
+                    </div>
+                    <ul class="nav navbar-nav">
+                      <li class="active"><a href="" style="color: white">Home</a></li>
+                      <!-- <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="">Page 1
+                        <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a href="#">Page 1-1</a></li>
+                          <li><a href="#">Page 1-2</a></li>
+                          <li><a href="#">Page 1-3</a></li>
+                        </ul>
+                      </li> -->
+                      <li><a href="1" style="color: white">Lecture 1</a></li>
+                      <li><a href="2" style="color: white">Lecture 2</a></li>
+                      <li><a href="3" style="color: white">Lecture 3</a></li>
+                    </ul>
+                  </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                        <div class="cv-port row">
+                            <div class="col-md-8">
+                                <div class="cv-stail row">
+                                    <div class="col-sm-12 vbhfg">
+                                        <img src="{{url_for('video_feed')}}" alt="">
+                                        <!-- <br> -->
+                                        <!-- <a href=""><i class="fas fa-cloud-download-alt"></i> Download Resume</a> -->
+                                    </div>
+                                    <!-- <div class="col-sm-8">
+                                        <h3>Hire Me for Your Next Project</h3>
+                                        <b>I will work hard to grow your business</b>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries,</p>
+                                    </div> -->
+                                </div>
+                                <!-- <div class="jumbo-address row">
+                                    <div class="row w-100 no-margin">
+                                        <div class="col-lg-6 no-padding">
+
+                                            <table class="addrss-list">
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Position</th>
+                                                        <td>Freelance</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Nationality</th>
+                                                        <td>American</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Date of birth</th>
+                                                        <td>09-06-1989</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+
+                                        </div>
+                                        <div class="col-lg-6 no-padding">
+                                            <table class="addrss-list">
+                                                <tbody>
+                                                    <tr>
+                                                        <th>Experiance</th>
+                                                        <td>5+ Years</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Website</th>
+                                                        <td>www.yourdomain.com</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>Languages</th>
+                                                        <td>English,French,Germany</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                </div> -->
+                            </div>
+                            <div class="col-md-4">
+                                <div class="cv-info">
+                                  <div class="cvp">
+                                      <h6>Detections</h6>
+                                  </div>
+                                  <iframe src={{url_for('output')}} width="90%" height="490px" border-radius="20px" title="Output window" id="my_iframe"></iframe>
+                                  <div class="progress">
+                                    <div class="progress-bar progress-bar-striped active" role="progressbar"
+                                    aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                                      80%
+                                    </div>
+                                    <a href="3" class="button">Go to Google</a>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <!-- <div class="tab-pane education-detail fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        
+                            <div class="service no-margin row">
+                                <div class="col-sm-3 resume-dat serv-logo">
+                                    <h6>2013-2015</h6>
+                                <p>Master Degree</p>
+                                </div>
+                                <div class="col-sm-9 rgbf">
+                                    <h5>Cambridg University</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                            <div class="service no-margin row">
+                                <div class="col-sm-3 resume-dat serv-logo">
+                                    <h6>2013-2015</h6>
+                                <p>Bacholers Degree</p>
+                                </div>
+                                <div class="col-sm-9 rgbf">
+                                    <h5>Anna University</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                            <div class="service no-margin row">
+                                <div class="col-sm-3 resume-dat serv-logo">
+                                    <h6>2013-2015</h6>
+                                <p>High School</p>
+                                </div>
+                                <div class="col-sm-9 rgbf">
+                                    <h5>A.M.H.S.S</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                            <div class="service no-margin row">
+                                <div class="col-sm-3 resume-dat serv-logo">
+                                    <h6>2013-2015</h6>
+                                <p>School</p>
+                                </div>
+                                <div class="col-sm-9 rgbf">
+                                    <h5>Anna University</h5>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="tab-pane portfolio-detail fade" id="port-folio" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            <div class="row no-margin gallery">
+                            <div class="col-sm-4">
+                                <img src="assets/images/gallery/gallery_01.jpg" alt="">
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="assets/images/gallery/gallery_02.jpg" alt="">
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="assets/images/gallery/gallery_03.jpg" alt="">
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="assets/images/gallery/gallery_04.jpg" alt="">
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="assets/images/gallery/gallery_05.jpg" alt="">
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="assets/images/gallery/gallery_06.jpg" alt="">
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="assets/images/gallery/gallery_10.jpg" alt="">
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="assets/images/gallery/gallery_08.jpg" alt="">
+                            </div>
+                            <div class="col-sm-4">
+                                <img src="assets/images/gallery/gallery_09.jpg" alt="">
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="tab-pane fade contact-tab" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                        <div class="row contact-ro no-margin">
+                                            
+                            <div class="col-md-6 no-padding">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3176144.0450019627!2d-107.79423426090409!3d38.97644533805396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x874014749b1856b7%3A0xc75483314990a7ff!2sColorado%2C+USA!5e0!3m2!1sen!2sin!4v1547222354537"  frameborder="0" style="border:0" allowfullscreen></iframe>
+                            </div>
+                            <div class="col-md-6 pr-0">
+                                <div class="row cont-row no-margin">
+                                    <div class="col-sm-6">
+                                        <input placeholder="Enter Full Name" type="text" class="form-control form-control-sm">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <input placeholder="Enter Email Address" type="text" class="form-control form-control-sm">
+                                    </div>
+                                </div>
+                                <div class="row cont-row no-margin">
+                                    <div class="col-sm-6">
+                                        <input placeholder="Enter Mobile Number" type="text" class="form-control form-control-sm">
+                                    </div>
+                                    
+                                </div>
+                                <div class="row cont-row no-margin">
+                                    <div class="col-sm-12">
+                                        <textarea placeholder="Enter your Message" class="form-control form-control-sm" rows="10"></textarea>
+                                    </div>
+                                    
+                                </div>
+                                <div class="row cont-row no-margin">
+                                    <div class="col-sm-6">
+                                        <button class="btn btn-sm btn-success">Send Message</button>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+          <div class="foot-credit">
+            <p>&copy; 2021 SKKU Hackathon Aloha</p>
+          </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        setInterval(function(){
+            var text = $("#my_iframe").contents().find('body').html();
+            var lines = text.split("<br>")
+            var last_line = lines[lines.length - 2]
+            if (last_line.includes("cell phone"))
+            {
+                $("#my_iframe").css( "background-color", "#D82933" );
+            }
+            else
+            {
+                $("#my_iframe").css( "background-color", "#C4E3FF" );
+            }
+            }, 500);
+    </script>
+</body>
+
+</html>
